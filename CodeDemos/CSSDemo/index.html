@@ -5,9 +5,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Demo</title>
+        <style>
+            h2,
+            h1 {
+                color: chartreuse
+            }
+
+            #blue-text {
+                color: blue
+            }
+
+            #red-text {
+                color: red
+            }
+
+            #green-text {
+                color: green;
+                font-size: 24px;
+                text-align: right;
+            }
+
+            #body {
+                background-color: black;
+            }
+
+            p {
+                color: white
+            }
+
+            .big-text {
+                font-size: 75px;
+            }
+
+            .big-right-text {
+                font-size: 100px;
+                text-align: right;
+            }
+
+            .centered {
+                display: block;
+                margin: 10px auto;
+                width: 45%;
+            }
+        </style>
     </head>
 
-    <body>
+    <body id="body">
         <h1>Today we will learn about adding style with css</h1>
         <h2>This is how we add style with inline css</h2>
         <p>This paragraph has no style</p>
@@ -15,6 +58,19 @@
         <p style="color:rgb(235, 11, 223); font-size:50px;">This is rgb(235, 11, 223) with font size 50px</p>
         <p style="color:red; font-size:24px; text-align:center; background-color:aqua;">This is a red, font size 24px,
             centered, with aqua background</p>
+
+        <h2>This is how we add style with internal css, id selectors</h2>
+        <p id="blue-text">I want this text to be blue</p>
+        <p id="red-text">This one should be red</p>
+        <p id="green-text">This one should be green, 24px, and right aligned</p>
+
+        <h2>Let's do this with class selectors now</h2>
+        <p class="big-text">I want this one really big</p>
+        <p class="big-right-text">I want this one really big and right aligned</p>
+
+        <h2>This is how you center an image</h2>
+        <img src="Mah Bootiful Face.jpg" alt="My face" class="centered">
+
     </body>
 
 </html>
