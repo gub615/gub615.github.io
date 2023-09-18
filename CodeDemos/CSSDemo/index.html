@@ -26,7 +26,7 @@
             }
 
             #body {
-                background-color: black;
+                background-color: rgb(72, 189, 225);
             }
 
             p,
@@ -50,71 +50,85 @@
                 margin: 10px auto;
                 width: 45%;
             }
+
+            .container {
+                margin: 20px 50px;
+                border: 1px solid white;
+                padding: 100px;
+                background-color: black;
+            }
         </style>
     </head>
 
     <body id="body">
-        <h1>Today we will learn about adding style with css</h1>
-        <h2>This is how we add style with inline css</h2>
-        <p>This paragraph has no style</p>
-        <p style="color:seagreen;">This is a seagreen paragraph</p>
-        <p style="color:rgb(235, 11, 223); font-size:50px;">This is rgb(235, 11, 223) with font size 50px</p>
-        <p style="color:red; font-size:24px; text-align:center; background-color:aqua;">This is a red, font size 24px,
-            centered, with aqua background</p>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <h1>Today we will learn about adding style with css</h1>
+            <h2>This is how we add style with inline css</h2>
+            <p>This paragraph has no style</p>
+            <p style="color:seagreen;">This is a seagreen paragraph</p>
+            <p style="color:rgb(235, 11, 223); font-size:50px;">This is rgb(235, 11, 223) with font size 50px</p>
+            <p style="color:red; font-size:24px; text-align:center; background-color:aqua;">This is a red, font size
+                24px,
+                centered, with aqua background</p>
 
-        <h2>This is how we add style with internal css, id selectors</h2>
-        <p id="blue-text">I want this text to be blue</p>
-        <p id="red-text">This one should be red</p>
-        <p id="green-text">This one should be green, 24px, and right aligned</p>
+            <h2>This is how we add style with internal css, id selectors</h2>
+            <p id="blue-text">I want this text to be blue</p>
+            <p id="red-text">This one should be red</p>
+            <p id="green-text">This one should be green, 24px, and right aligned</p>
 
-        <h2>Let's do this with class selectors now</h2>
-        <p class="big-text">I want this one really big</p>
-        <p class="big-right-text">I want this one really big and right aligned</p>
+            <h2>Let's do this with class selectors now</h2>
+            <p class="big-text">I want this one really big</p>
+            <p class="big-right-text">I want this one really big and right aligned</p>
 
-        <h2>This is how you center an image</h2>
-        <img src="Mah Bootiful Face.jpg" alt="My face" class="centered">
+            <h2>This is how you center an image</h2>
+            <img src="Mah Bootiful Face.jpg" alt="My face" class="centered">
 
-        <p class="centered">Look at this video!</p>
-        <iframe width="560" height="315"
-            src="https://www.youtube-nocookie.com/embed/LO_JR2D0xJk?si=lxGPcos-K7_w7UxM&amp;clip=Ugkxf8Bv0b2EgFvLeJ_ala1Z4tHPebJh-XqO&amp;clipt=ENG-IBiLriE"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen class="centered"></iframe>
+            <p class="centered">Look at this video!</p>
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/LO_JR2D0xJk?si=lxGPcos-K7_w7UxM&amp;clip=Ugkxf8Bv0b2EgFvLeJ_ala1Z4tHPebJh-XqO&amp;clipt=ENG-IBiLriE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen class="centered"></iframe>
 
-        <table class="centered">
-            <tr>
-                <th>Shakespearean Words</th>
-                <th> </th>
-                <th>English Words</th>
-            </tr>
-            <tr>
-                <td style="text-align:center;">Thou</td>
-                <td> </td>
-                <td style="text-align:center;">You</td>
-            </tr>
-            <tr>
-                <td style="text-align:center;">Thine</td>
-                <td> </td>
-                <td style="text-align:center;">Your</td>
-            </tr>
-            <tr>
-                <td style="text-align:center;">Wherefore</td>
-                <td> </td>
-                <td style="text-align:center;">Why</td>
-            </tr>
-            <tr>
-                <td style="text-align:center;">Art</td>
-                <td> </td>
-                <td style="text-align:center;">Are</td>
-            </tr>
-            <tr>
-                <td style="text-align:center;">Hither</td>
-                <td> </td>
-                <td style="text-align:center;">Here</td>
-            </tr>
+            <table class="centered">
+                <tr>
+                    <th>Shakespearean Words</th>
+                    <th> </th>
+                    <th>English Words</th>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Thou</td>
+                    <td> </td>
+                    <td style="text-align:center;">You</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Thine</td>
+                    <td> </td>
+                    <td style="text-align:center;">Your</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Wherefore</td>
+                    <td> </td>
+                    <td style="text-align:center;">Why</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Art</td>
+                    <td> </td>
+                    <td style="text-align:center;">Are</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">Hither</td>
+                    <td> </td>
+                    <td style="text-align:center;">Here</td>
+                </tr>
 
-        </table>
-
+            </table>
+        </div>
     </body>
 
 </html>
