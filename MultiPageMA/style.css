@@ -10,4 +10,17 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: white;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 15px 29px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
