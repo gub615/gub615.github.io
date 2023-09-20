@@ -24,3 +24,9 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
+.centered {
+    display: block;
+    margin: 10px auto;
+    width: 50%
+}
