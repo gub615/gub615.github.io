@@ -1,0 +1,13 @@
+.container {
+    margin: 10px 10px;
+    border: 5px solid rgb(53, 53, 53);
+    padding: 100px;
+    background-color: white;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
