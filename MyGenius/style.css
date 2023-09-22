@@ -28,5 +28,33 @@
 .centered {
     display: block;
     margin: 10px auto;
-    width: 50%
+    width: 50%;
+}
+
+.right {
+    display: block;
+    margin: auto 10px auto auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+p {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+}
+
+.img li {
+    display: block;
+    float: left;
 }
