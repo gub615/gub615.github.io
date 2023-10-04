@@ -22,6 +22,7 @@ body {
     grid-row: 1;
 }
 
+/* This is other grid stuff */
 .main-image {
     grid-column: 1 / span 3;
     grid-row: 2;
@@ -48,6 +49,7 @@ body {
     background-color: maroon;
 }
 
+/* Back to navbar stuff */
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -69,6 +71,7 @@ body {
     color: black;
 }
 
+/* Then the footer */
 .footer {
     position: fixed;
     left: 0;
