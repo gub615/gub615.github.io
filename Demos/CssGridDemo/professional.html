@@ -6,12 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSS Grid Practice</title>
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            .grid-item {
+                background-color: grey;
+                font-family: Verdana, sans-serif;
+            }
+
+            .nav {
+                font-family: Georgia, serif;
+            }
+
+            a {
+                font-size: 30px;
+            }
+        </style>
     </head>
 
     <body>
         <div class="grid-container">
             <div class="grid-item navmenu">
-                <ul class="navbar">
+                <ul style="background-color: rgb(153, 153, 153);" class="navbar">
                     <li><a class="nav" href="index.html">Home</a></li>
                     <li><a class="nav" href="professional.html">Professional</a></li>
                 </ul>
@@ -19,11 +33,24 @@
             <div class="grid-item main-image">
                 <img style="width: 100%" src="images/PracticeImage.jpg" alt="Practice Predator">
             </div>
-            <div class="grid-item main1">Main 1 content</div>
-            <div class="grid-item support-section">Support 1</div>
-            <div class="grid-item support-section">Support 2</div>
-            <div class="grid-item main2">Main 2 content</div>
-            <div class="grid-item side-nav">Side nav</div>
+            <div style="background-color: rgb(103, 103, 103);" class="grid-item main1">
+                The main point of this page: Isn't this shark cute?
+            </div>
+            <div style="background-color: rgb(78, 78, 78);" class="grid-item support-section">I am the first to support
+                the cuteness of this shark.</div>
+            <div style="background-color: rgb(78, 78, 78);" class="grid-item support-section">I am the second to support
+                the cuteness of this shark.</div>
+            <div style="background-color: rgb(53, 53, 53);" class="grid-item main2">
+                The other main point that is only slightly less main than the first main point of this page: Aren't the
+                seal and mouse cute?
+            </div>
+            <div style="background-color: rgb(28, 28, 28); color: gray;" class="grid-item side-nav">
+                Side note:<br>
+                each grid item is 25 rgb less than the last. Also, you may notice that I didn't include the owl in what
+                was cute. This is because I don't find owls as cute as sharks, seals, and mice. But another reason might
+                be that the owl looks like it's in the process of tripping many spherical objects after it touched just
+                a little too much grass.
+            </div>
         </div>
     </body>
 
