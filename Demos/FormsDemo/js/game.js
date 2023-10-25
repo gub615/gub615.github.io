@@ -13,7 +13,7 @@ function greet() {
     let age = document.getElementById('age').value;
 
     // Show the result
-    greetParagraph.innerHTML = "Greetings, " + age + " year old " + fname + " " + lname + ".";
+    greetParagraph.innerHTML = "Greetings, " + age + " yo " + fname + " " + lname + ".";
 }
 
 // Function for my trivia
