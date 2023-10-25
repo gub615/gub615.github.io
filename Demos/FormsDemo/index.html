@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Welcome to my 2 truths and a lie game!</h1>
+    <hr>
+    <h2>Introductions</h2>
+    <form action="" id="name-form">
+        <label for="fname">First Name</label><br>
+        <input type="text" name="fname" id="fname"><br><br>
+        <!-- add last name text input and age input -->
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+        <label for="age">Age</label><br>
+        <input type="text" name="age" id="age">
+    </form>
+    <br>
+    <!-- Button to process for form input above with js -->
+    <input type="button" value="Submit" onclick="greet()">
+    <p id="greet" style="font-size: x-large;">Welcome</p>
+
+
+    <!-- Link to js file -->
+    <script src="js/game.js"></script>
+</body>
+</html>
