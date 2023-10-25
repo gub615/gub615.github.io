@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Demo</title>
+    <style>
+        #box {
+            background-color:blueviolet;
+            height: 150px;
+            width: 150px;
+            position: relative;
+        }
+
+        @keyframes jump {
+            from {top: 0px;}
+            to {top: -100px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts on an anchor?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert
+    ('Warning! You are navigating away from my site!')">Eastside Prep</a>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML=
+    'Nana nana nana nana, Sudo Sensei!';
+    document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <!-- Add two truths and a lie -->
+    <h2>Two truths and a lie</h2>
+    <ul>
+        <ol>I have a dog</ol>
+        <ol>I enjoy coding and technology</ol>
+        <ol>I have never had a major injury</ol>
+    </ul>
+    <p id="lie"></p>
+    <button onclick="document.getElementById('lie').innerHTML=
+    'The lie is the third option. I have had a major concussion.';
+    document.getElementById('lie').style.display='block'">Show Answer</button>
+    <button onclick="document.getElementById('lie').style.display='none'">Hide Answer</button>
+
+
+    <h2>How do we chane an image with javascript?</h2>
+    <img id="bulb" src="Images/pic_bulboff.gif" alt="Bulb is off">
+    <br>
+    <button onclick="document.getElementById('bulb').src='Images/pic_bulbon.gif'">On</button>
+    <!-- Add button to turn light off -->
+    <button onclick="document.getElementById('bulb').src='Images/pic_bulboff.gif'">Off</button>
+
+    <h2>How do we change CSS styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button onclick="document.getElementById('alice').style.fontSize='5px';
+    document.getElementById('alice').style.color='blue'">Cake: Eat me</button>
+    <!-- Add button to make Alice large in red font when she drinks a potion -->
+    <button onclick="document.getElementById('alice').style.fontSize='25px';
+    document.getElementById('alice').style.color='red'">Potion: Drink me</button>
+    <button onclick="document.getElementById('alice').style.fontSize='16px';
+    document.getElementById('alice').style.color='black'">Normal</button>
+
+    <h2>How do we return user input?</h2>
+    <button onclick="askname()">What's your name?</button>
+    <p id="ask-name"></p>
+
+
+    <script>
+        function askname(){
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt('What is your name?');
+            //decide what to do
+            if (name === "sudo"){
+                nameParagraph.innerHTML = 'Welcome to the classroom, sensei.';
+            }
+            else if (name === "Sudo"){
+                nameParagraph.innerHTML = 'Welcome to the classroom, sensei.';
+            }
+            else if (name === "masato"){
+                nameParagraph.innerHTML = 'Welcome to the classroom, sensei.';
+            }
+            else if (name === "Masato"){
+                nameParagraph.innerHTML = 'Welcome to the classroom, sensei.';
+            }
+            else {
+                nameParagraph.innerHTML = 'Hello, ' + name;
+            }
+        }
+    </script>
+
+    <h2>The new code: Animation and Cursor</h2>
+    <button onclick="myFunction()">Jump</button>
+    <div id="box"></div>
+
+    <script>
+        function myFunction() {
+            document.getElementById('box').style.animation='jump 1s;'
+        }
+    </script>
+
+
+</body>
+</html>
