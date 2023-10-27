@@ -40,3 +40,57 @@ function trivia() {
         triviaAnswer.innerHTML = fname + ", I don't know what you messed up, but know that without a doubt you ruined something."
     }
 }
+
+function lie() {
+    // Get handle to the result paragraph
+    let lieAnswer = document.getElementById('lie-answer');
+
+    // Get result of selected lie
+    let dogSelected = document.getElementById('dog').checked;
+    let techSelected = document.getElementById('tech').checked;
+    let injurySelected = document.getElementById('injury').checked;
+
+    // Now process the answers
+    if (dogSelected) {
+        lieAnswer.innerHTML = "That is incorrect " + fname + ", I do have a dog named Lola."
+    }
+    else if (techSelected) {
+        lieAnswer.innerHTML = "That is incorrect " + fname + ", I do enjoy coding and technology. That is why I made this page."
+    }
+    else if (injurySelected) {
+        lieAnswer.innerHTML = "That is correct " + fname + ", Good job. I have gotten a major concussion before."
+    }
+    else {
+        lieAnswer.innerHTML = fname + ", I don't know what you messed up, but know that without a doubt you ruined something."
+    }
+}
+
+function truth() {
+    // Get handle to the result paragraph
+    let truthAnswer = document.getElementById('truth-answer');
+
+    // Get result of selected truth
+    let oneSelected = document.getElementById('').checked;
+    let twoSelected = document.getElementById('').checked;
+    let threeSelected = document.getElementById('').checked;
+
+    // Now process the answers
+    if (oneSelected) {
+        truthAnswer.innerHTML = "There are two truths, " + fname + ". That means choose two."
+    }
+    else if (twoSelected || threeSelected) {
+        truthAnswer.innerHTML = "There are two truths, " + fname + ". That means choose two."
+    }
+    else if (oneSelected && twoSelected) {
+        truthAnswer.innerHTML = "Almost had it, " + fname + ". ."
+    }
+    else if (twoSelected && threeSelected) {
+        truthAnswer.innerHTML = "Almost had it, " + fname + ". ."
+    }
+    else if (oneSelected && threeSelected) {
+        truthAnswer.innerHTML = "You got it, " + fname + "! ."
+    }
+    else {
+        triuthAnswer.innerHTML = fname + ", I don't know what you messed up, but know that without a doubt you ruined something."
+    }
+}

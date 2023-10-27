@@ -24,7 +24,7 @@
     <br>
     <!-- Button to process for form input above with js -->
     <input type="button" value="Submit" onclick="greet()">
-    <p id="greet" style="font-size: x-large;">Welcome</p>
+    <p id="greet" style="font-size: x-large;">Greetings</p>
 
     <hr>
     <h2>Warm up trivia question!</h2>
@@ -40,6 +40,33 @@
     <input type="button" value="Submit" onclick="trivia()"><br>
     <p id="trivia-answer"></p>
 
+    <h2>Two truths and a lie!</h2>
+    <h3>Which is the lie?</h3>
+    <form action="">
+        <input type="radio" name="lie" id="dog">
+        <label for="dog">I have a dog</label><br><br>
+        <input type="radio" name="lie" id="tech">
+        <label for="tech">I enjoy coding and technology</label><br><br>
+        <input type="radio" name="lie" id="injury">
+        <label for="injury">I have never had a major injury</label>
+    </form>
+    <br>
+    <input type="button" value="Submit" onclick="lie()"><br>
+    <p id="lie-answer"></p>
+
+    <h1>Same thing, but how about...</h1>
+    <h3>Which are the truths?</h3>
+    <form action="">
+        <input type="checkbox" name="truth" id="dog">
+        <label for="dog">I have a dog</label><br><br>
+        <input type="checkbox" name="truth" id="tech">
+        <label for="tech">I enjoy coding and technology</label><br><br>
+        <input type="checkbox" name="truth" id="injury">
+        <label for="injury">I have never had a major injury</label>
+    </form>
+    <br>
+    <input type="button" value="Submit" onclick="truth()"><br>
+    <p id="truth-answer"></p>
 
 
     <!-- Link to js file -->
