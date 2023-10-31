@@ -20,24 +20,66 @@
 
     <div class="container-fluid">
 
+        <!-- Add navbar logo -->
+        <!-- Add new element (navbar collapse?) -->
         <div class="navbar navbar-expand-sm bg-primary navbar-dark">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="challenge.html">Student Challenge</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/MahBootifulFace.png" alt="Face logo" style="width:40px" class="rounded-pill">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="challenge.html">Student Challenge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
     </div>
 
+    <!-- Alternative new element (offcanvas sidebar) -->
+    <div class="offcanvas offcanvas-bottom text-bg-dark" id="bottomBar">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Bottom Page Nav Bar</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body navbar navbar-dark navbar-expand-sm">
+            <div class="container-fluid bg-primary">
+                <ul class="navbar-nav">
+                    <li>
+                        <a class="navbar-brand" href="#">
+                            <img src="images/MahBootifulFace.png" alt="Face logo" style="width:40px" class="rounded-pill">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="challenge.html">Student Challenge</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Replace carousel images with own -->
     <!-- Carousel -->
     <div id="slide" class="carousel slide" data-bs-ride="carousel">
 
@@ -63,7 +105,7 @@
             <div class="carousel-item">
                 <img src="images/ragamuffin.png" alt="Ragamuffin definition" class="d-block" style="width:100%">
                 <div class="carousel-caption">
-                    <h3>The definition of Ragamuffin</h3>
+                    <h3>The definition of ragamuffin</h3>
                     <p>An odd word, to be sure</p>
                 </div>
             </div>
@@ -84,6 +126,39 @@
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
+
+    <!-- Add a grid with 5 columns adding up to 12 -->
+    <div class="container p-5 m-5 mx-auto border">
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Bootstrap is for HTML</h1>
+                <p>HTML is cool. I love what I can do with it.</p>
+            </div>
+            <div class="col-md-1" style="text-align:center">
+                <h2>Smol clmn</h2>
+            </div>
+            <div class="col-md-4">
+                <h1>Bootstrap is for CSS</h1>
+                <p>It's nice that I can use design ideas from professionals!</p>
+            </div>
+            <div class="col-md-1" style="text-align:center">
+                <h2>Smol clmn 2.0</h2>
+            </div>
+            <div class="col-md-3">
+                <h1>Bootstrap is for Javascript</h1>
+                <p>It's nice because it makes my page responsive on small screens!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#bottomBar">
+                    Bottom Nav Bar
+                </button>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
