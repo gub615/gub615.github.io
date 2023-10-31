@@ -70,7 +70,7 @@ function truth() {
     let truthAnswer = document.getElementById('truth-answer');
 
     // Get result of selected truth
-    let oneSelected = document.getElementById('').checked;
+    let oneSelected = document.getElementById('seafood').checked;
     let twoSelected = document.getElementById('').checked;
     let threeSelected = document.getElementById('').checked;
 
@@ -91,6 +91,6 @@ function truth() {
         truthAnswer.innerHTML = "You got it, " + fname + "! ."
     }
     else {
-        triuthAnswer.innerHTML = fname + ", I don't know what you messed up, but know that without a doubt you ruined something."
+        truthAnswer.innerHTML = fname + ", I don't know what you messed up, but know that without a doubt you ruined something."
     }
 }
