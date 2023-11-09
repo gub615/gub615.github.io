@@ -3,5 +3,20 @@
 }
 
 .body {
-    background-color: rgb(15, 15, 150);
+    background-color: rgb(1, 66, 128);
+    max-width: 775px;
+}
+
+.head {
+    width: 1140px;
+    display: flex;
+    justify-content: center;
+}
+
+.headimg {
+    max-width: 775px;
+}
+
+.content {
+    background-color: white;
 }
