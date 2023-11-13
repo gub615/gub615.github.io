@@ -5,18 +5,30 @@
 .body {
     background-color: rgb(1, 66, 128);
     max-width: 775px;
+    font-family: Georgia, serif;
 }
 
 .head {
-    width: 1140px;
     display: flex;
     justify-content: center;
 }
 
 .headimg {
-    max-width: 775px;
+    max-width: 744px;
 }
 
 .content {
     background-color: white;
+}
+
+.containerNav {
+    border: 1px, solid;
+    padding: 0%;
+}
+
+.navbar {
+    width: 744px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 17.6px;
 }
