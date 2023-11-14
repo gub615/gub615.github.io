@@ -21,14 +21,19 @@
     background-color: white;
 }
 
-.containerNav {
-    border: 1px, solid;
-    padding: 0%;
-}
-
 .navbar {
     width: 744px;
     font-weight: bold;
     font-variant: small-caps;
     font-size: 17.6px;
+    --bs-navbar-padding-y: 0px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(16, 99, 172);
+    color: rgb(255, 255, 125);
+}
+
+.nav-link.active {
+    background-color: rgb(19, 119, 206);
 }
