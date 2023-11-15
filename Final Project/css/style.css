@@ -81,3 +81,65 @@ ul li {
     text-transform: lowercase;
     font-variant: small-caps;
 }
+
+#infig,
+#inbase {
+    transition: 0.5s;
+}
+
+#infig:hover,
+#inbase:hover {
+    opacity: 0.7;
+}
+
+/* Modal background */
+.modal {
+    /* Hidden by default */
+    display: none;
+    position: fixed;
+    /* At top */
+    z-index: 1;
+    /* Location of modal img */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* Enable scroll if needed */
+    overflow: auto;
+    /* Fallback color */
+    background-color: black;
+    /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal image */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(160, 160, 160);
+}
+
+/* Full width on smaller screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
